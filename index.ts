@@ -95,7 +95,13 @@ let quizdata = [
         console.log(chalk.bgWhite.black.italic.bold("RESULT"));
         
         console.log(`your total score is ${score} out of ${quizdata.length}`);
-        
+         if (score <= 4){
+            console.log(chalk.bgRed.white("you are Fail try next time"));
+            
+        }else {
+            console.log(chalk.bgGreen.white("you are Pass ! Congrats"));
+            
+        }
     }
 
     startQuiz();
